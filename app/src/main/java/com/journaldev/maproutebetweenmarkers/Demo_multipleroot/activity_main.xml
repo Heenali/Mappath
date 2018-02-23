@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    android:orientation="vertical" >
+   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+          
+            android:layout_gravity="bottom"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+
+       <ListView
+           android:id="@+id/listView1"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1" >
+       </ListView>
+           
+      </LinearLayout>
+    <fragment 
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        class="com.google.android.gms.maps.SupportMapFragment" /> 
+ <Button 
+        android:id="@+id/btn_draw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="str_btn_draw"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true" 
+        android:layout_centerHorizontal="true" />
+    
+</LinearLayout>
